@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please enter the following:</p>
+</head>
+<body>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name"id="name-label">Name
+      </label><br> 
+    <input id="name" type="text" placeholder="Name" required/></br>
+      <label for="email"id="email-label">Email
+      </label><br>
+    <input id="email" type="email" placeholder="Email" required/><br>
+      <label for="number"id="number-label">Number
+      </label><br>
+    <input id="number" type="number" placeholder="password" min="8" max="32" required/>
+  </fieldset>
+
+  <fieldset>
+    <label for="role">Which option best describes your current role?</label>
+    <select id="dropdown" name="role"type="dropdown" placeholder="Select an Option">
+      <option>Student</option>
+      <option>Full Time Job</option>
+      <option>Full Time Learner</option>
+      <option>Not in Employment,Education or in Training</option>
+      <option>Rather not to say</option>
+      <option>Other</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <label for="recommend" name="recommend">Would you recommend FreeCodeCamp to a friend?</label><br>
+<input type="radio" id="yes" name="recommend" value="yes">
+<label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="recommend" value="no">
+      <label for="no">No</label><br>
+      <input type="radio" id="notsure" name="recommend" value="notsure">
+      <label for="notsure">Not Sure</label><br>
+      <input type="radio" id="nottosay" name="recommend" value="nottosay">
+      <label for="recommend">I'd rather not to say</label>
+  </fieldset>
+
+  <fieldset>
+    <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+    <select id="dropdown" name="choice1"type="dropdown" placeholder="Select an Option">
+      <option>Challenges</option>
+      <option>Projects</option>
+      <option>Community</option>
+      <option>Open Source</option>
+      <option>Rather not to say</option>
+      <option>Other</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+      <label for="feature" name="feature">What would you like to see improved?</label><br>
+      <input type="checkbox" id="frontend" name="feature" value="frontend">
+      <label for="frontend">Front-end Projects</label><br>
+      <input type="checkbox" id="backend" name="feature" value="backend">
+      <label for="backend">Back-end Projects</label><br>
+      <input type="checkbox" id="data" name="feature" value="data">
+      <label for="data">Data Visualization</label><br>
+      <input type="checkbox" id="challenges" name="feature" value="challenges">
+      <label for="challenges">Challenges</label><br>
+      <input type="checkbox" id="open" name="feature" value="open">
+      <label for="open">Open Source Community</label><br>
+      <input type="checkbox" id="gitte" name="feature" value="gitte">
+      <label for="gitter">Gitter help rooms</label><br>
+      <input type="checkbox" id="Videos" name="feature" value="Videos">
+      <label for="Videos">Videos</label><br>
+      <input type="checkbox" id="meetups" name="feature" value="meetups">
+      <label for="meetups">City Meetups</label><br>
+      <input type="checkbox" id="wiki" name="feature" value="wiki">
+      <label for="wiki">Wiki</label><br>
+      <input type="checkbox" id="forum" name="feature" value="forum">
+      <label for="forum">Forum</label><br>
+      <input type="checkbox" id="courses" name="feature" value="courses">
+      <label for="courses">Additional Courses</label><br>
+  </fieldset>
+
+  <fieldset>
+      <label for="comments" name="comments">Any comments or suggestions?</label><br>
+      <textarea name="comments" rows="20" cols"50">Comment here...</textarea>
+  </fieldset>
+  
+  <fieldset>
+  <button id="submit" name="submit">Submit</button>
+  </fieldset>
+  </form>
+</body>
+</html>
